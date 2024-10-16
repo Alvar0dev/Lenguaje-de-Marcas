@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumnos"> <!--Elemento
+        raiz va aqui-->
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumno" maxOccurs="unbounded"> <!-- maxOccurs="unbounded (aparecera
+                    una o mas veces)"-->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="apellidos" type="xs:string" />
+                            <xs:element name="edad">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer"> <!-- Si esta declarado dentro
+                                        de la restricion no hace falta ponerlo en el elemento-->
+                                        <xs:minInclusive value="18" />
+                                        <xs:maxInclusive value="100" /> <!-- Rango de intevalo
+                                        permitido-->
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ciclo" type="xs:string" />
+                            <xs:element name="nota_media" type="xs:integer" />
+                        </xs:sequence>
+                        <xs:attribute name="expediente">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0" />
+                                    <xs:maxInclusive value="9999" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+
+                        <!--Los
+                        atributos una etiqueta compleja con mas elementos dentro se pone fuera de la
+                        secuencia de elementos que contiene-->
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

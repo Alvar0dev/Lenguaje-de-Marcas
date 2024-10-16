@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Declaracion con version y encoding-->
+
+<?xml-model href="hola_xml.xsd" type="application/xml" schemaLocation="hola_xml.xsd"?>
+
+<!-- DTD - Aqui se coloca el DTD y establece los elementos y que atributos pueden tener -->
+<!DOCTYPE alumnos [
+    <!ELEMENT alumnos (alumno+)> <!-- + (una o mas veces) * (cero o mas veces) ?(puede o no
+    aparecer)-->
+    <!ATTLIST alumnos> <!-- CDATA (Caracteres de datos)-->
+    <!-- #REQUIRED (Requerido) #IMPLIED (Opcional)-->
+    <!ELEMENT alumno (nombre, apellidos, edad, ciclo,nota_media)>
+    <!ATTLIST alumno expediente CDATA #REQUIRED>
+    <!-- Aqui se colocan los elementos  que estaran dentro de alumno -->
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT ciclo (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT nota_media (#PCDATA)>
+]>
+<alumnos>
+    <alumno expediente="1000">
+        <nombre>Alvaro</nombre>
+        <apellidos>Perez</apellidos>
+        <edad>22</edad>
+        <ciclo>DAW</ciclo>
+        <nota_media>8</nota_media>
+    </alumno>
+
+    <alumno expediente="1001">
+        <nombre>Carlos</nombre>
+        <apellidos>Jimenez</apellidos>
+        <edad>21</edad>
+        <ciclo>DAM</ciclo>
+        <nota_media>9</nota_media>
+    </alumno>
+
+    <alumno expediente="1002">
+        <nombre>Antonio</nombre>
+        <apellidos>Santos</apellidos>
+        <edad>26</edad>
+        <ciclo>ASIR</ciclo>
+        <nota_media>7</nota_media>
+    </alumno>
+</alumnos>
