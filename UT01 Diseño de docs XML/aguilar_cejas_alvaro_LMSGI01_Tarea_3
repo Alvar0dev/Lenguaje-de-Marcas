@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="aguilar_cejas_alvaro_LMSGI01_Tarea_3.xsd" type="application/xml" schematypens="aguilar_cejas_alvaro_LMSGI01_Tarea_3.xsd"?>
+
+<modulo>
+    <nombre>Lenguajes de Marcas y Sistemas de Gestión de Información</nombre>
+    <horas_semanales>4</horas_semanales>
+    <caracter>obligatorio</caracter>
+    <periodo>
+        <inicio>2010-09-15</inicio>
+        <fin>2011-06-30</fin>
+    </periodo>
+    <alumnos>
+        <alumno>
+            <nombre>Ana</nombre>
+            <apellidos>Fernández Gutiérrez</apellidos>
+            <nif>16965696L</nif>
+            <telefono>789654321</telefono>
+            <email>ana.fdezgtrrez@hotmail.com</email>
+            <direccion>
+                <calle>C/ El Percebe, 13</calle>
+                <ciudad>Santander</ciudad>
+                <codigo_postal>39302</codigo_postal>
+            </direccion>
+            <faltas_asistencia>0</faltas_asistencia>
+            <notas>No disponible</notas>
+        </alumno>
+        <alumno>
+            <nombre>Pepito</nombre>
+            <apellidos>Grillo</apellidos>
+            <nif>98765432H</nif>
+            <telefono>656566555</telefono>
+            <email>yhyh@yahoo.com</email>
+            <direccion>
+                <calle>Avd. El Pez, 5</calle>
+                <ciudad>Suances</ciudad>
+                <codigo_postal>39401</codigo_postal>
+            </direccion>
+            <faltas_asistencia>0</faltas_asistencia>
+            <notas>apto</notas>
+        </alumno>
+    </alumnos>
+</modulo>

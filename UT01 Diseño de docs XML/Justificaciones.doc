@@ -1,0 +1,22 @@
+Actividad 1: Documento XML para una Agenda Telefónica
+
+Justificación:
+Este diseño utiliza una estructura jerárquica XML clara, donde cada persona tiene sus propios atributos como nombre, apellidos, dirección y varios teléfonos (móvil, casa, trabajo). Se ha optado por etiquetas descriptivas, y la relación entre la persona y sus datos es evidente a través de la jerarquía. La etiqueta <telefono> permite definir de manera clara qué tipo de teléfono es, lo que facilita la clasificación de los datos.
+
+Actividad 2: Documento XML para una Receta de Cocina
+
+Justificación:
+El diseño tiene en cuenta que se pueden realizar búsquedas por nombre de receta, número de comensales o ingredientes. Cada ingrediente tiene su cantidad específica para que sea más fácil ajustar las proporciones si se cambia el número de comensales. La receta también incluye una estructura clara para los pasos del proceso de elaboración.
+
+Actividad 3: Documento XML para la Gestión de Alumnos de un Módulo DAM
+
+Justificación:
+La estructura XML refleja la jerarquía de los datos, con el módulo como nodo raíz y los estudiantes como nodos hijos. Cada alumno tiene sus datos personales, además de campos como la nota y las faltas de asistencia. Se usan atributos y etiquetas que permiten una gestión clara de la información del curso.
+
+
+Justificación del Uso de XSD
+El uso de un esquema XSD es clave para garantizar que los documentos XML sigan una estructura y tipos de datos predefinidos, lo que facilita su validación. El XSD permite definir claramente los elementos, atributos, tipos de datos y relaciones entre los nodos, asegurando que los documentos sean consistentes y bien formados.
+Actividad 1 (Agenda Telefónica): El XSD define que los contactos deben tener un nombre, apellidos, dirección y una lista de teléfonos con un atributo que especifica el tipo.
+Actividad 2 (Receta de Cocina): Se asegura que la receta tenga un nombre, número de comensales, una lista de ingredientes y un proceso con múltiples pasos.
+Actividad 3 (Gestión de Alumnos): El esquema establece que el módulo tiene alumnos con sus datos personales, faltas de asistencia y notas, garantizando que la información esté organizada de manera adecuada.
+Este uso del XSD asegura que cualquier sistema que utilice estos XML pueda procesar la información de forma estructurada y consistente.

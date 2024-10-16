@@ -19,6 +19,8 @@
     <!ELEMENT edad (#PCDATA)>
     <!ELEMENT nota_media (#PCDATA)>
 ]>
+
+<!-- Aqui se coloca el elemento raiz (main o alumnos en este caso) -->
 <alumnos>
     <alumno expediente="1000">
         <nombre>Alvaro</nombre>

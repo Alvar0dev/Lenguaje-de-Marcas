@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="aguilar_cejas_alvaro_LMSGI01_Tarea_1.xsd" type="application/xml" schematypens="aguilar_cejas_alvaro_LMSGI01_Tarea_1.xsd"?>
+<agenda>
+    <contacto>
+        <nombre>Juan</nombre>
+        <apellidos>Pérez Gómez</apellidos>
+        <direccion>Calle Falsa, 123</direccion>
+        <telefonos>
+            <telefono tipo="casa">123456789</telefono>
+            <telefono tipo="movil">987654321</telefono>
+            <telefono tipo="trabajo">112233445</telefono>
+        </telefonos>
+    </contacto>
+    <contacto>
+        <nombre>Ana</nombre>
+        <apellidos>López Martínez</apellidos>
+        <direccion>Avenida Siempre Viva, 456</direccion>
+        <telefonos>
+            <telefono tipo="casa">111222333</telefono>
+            <telefono tipo="movil">444555666</telefono>
+        </telefonos>
+    </contacto>
+</agenda>
