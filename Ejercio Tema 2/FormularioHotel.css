@@ -1,0 +1,32 @@
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Alinear etiquetas y entradas horizontalmente */
+.Seleccion {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-bottom: 15px;
+}
+
+.Seleccion label {
+  flex: 0 0 150px; /* Ancho fijo para las etiquetas */
+  text-align: right; /* Alinear texto dentro de la etiqueta */
+  margin-right: 10px; /* Espaciado entre etiqueta y campo */
+}
+
+.Seleccion input {
+  flex: 1; /* El input ocupa el resto del espacio */
+}
+
+/* Estilo opcional para el contenedor general */
+body {
+  background-color: rgb(218, 227, 255);
+  font-family: Arial, sans-serif;
+}

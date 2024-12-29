@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"> 
+<!-- Declaracion va en todos los documentos XML con "version , encoding y standalone" en ese orden, tag de cierre-->
+
+<!DOCTYPE holaxml SYSTEM "holaxml.dtd"> <!-- declaracion de tipo de documento -->
+<!-- <holaxml> --> <!-- tag de apertura -->
+
+<Anidados>
+    <coches>
+        <coche1>
+            <marca>Renault</marca>
+            <modelo>Symbol_Cangoo</modelo> 
+            <color>Rojo</color>
+        </coche1>
+        <coche2> 
+            <marca>Renault</marca>
+            <modelo>Symbol_Cangoo</modelo> 
+            <color>Rojo</color> 
+        </coche2>      
+    </coches>
+</Anidados>
+
+<tagvacio> </tagvacio> = <tagvacio/>
+
+<Atributos> 
+
+    <personaje id="1" salud="100" resistencia="20" poder="10"> <!-- atributos en linea -->
+        <nombre>Alvaro</nombre>
+        <profesion ="Guerrero"/> <!-- atributos sin espacios -->
+        <debilidad="Magia"> fisica </debilidad> <!-- atributos con espacios -->
+        <stats nivel ="1"> +1 </stats>
+        <stats nivel ="2"> +2 </stats>
+        <stats nivel ="3"> +3 </stats>
+
+    </personaje>
+
+    <personaje id="2" salud="50" resistencia="10" poder="40"> <!-- atributos en linea -->
+        <nombre>Miyhumi</nombre>
+        <profesion ="Maga"/> <!-- atributos sin espacios -->
+        <debilidad="Palabras"> fisica </debilidad> <!-- atributos con espacios -->
+        <stats nivel ="1"> +1 </stats>
+        <stats nivel ="2"> +2 </stats>
+        <stats nivel ="3"> +3 </stats>
+
+    </personaje>
+
+</Atributos>
+
+
+<?target instructions?> <!-- instrucciones de procesado -->
+<?xml-stylesheet type="text/xsl" href="style.xsl"?> <!-- ejemplo -->
+
+
+
+<!--Referencias de entidades-->>
+&lt; representa el carácter <
+&gt; representa el carácter >
+&amp; representa el carácter &
+
+<!-- Referencias de caracteres -->
+
+&#x20; representa el carácter espacio (U+0020)
+&#x00A9; representa el carácter copyright (U+00A9)
+&#60; representa el carácter menor que (U+003C)
+&#34; representa el carácter comilla doble (U+0022)

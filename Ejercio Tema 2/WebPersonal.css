@@ -1,0 +1,32 @@
+body.Section.h2 {
+  color: rgb(160, 0, 0);
+  background-color: rgb(255, 255, 255);
+
+  #Informacion {
+    color: rgb(0, 0, 0);
+    background-color: rgb(100, 100, 255);
+  }
+
+  footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  footer a {
+    color: #0077b5; /* Color de LinkedIn */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer img {
+    width: 5px;
+    height: auto;
+    margin-right: 10px;
+  }
+}

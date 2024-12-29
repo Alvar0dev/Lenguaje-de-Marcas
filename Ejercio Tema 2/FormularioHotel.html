@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Hotel</title>
+
+    <link rel="stylesheet" href="FormularioHotel.css">
+
+    <style>
+        body{
+            background-color: rgb(218, 227, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Reservas Hotel CRUD</h1>
+
+<form action="<!-- Enlace a la página de destino-->" method="post" <!-- El metodo post permite enviar la informacion sin que este implicita en la URL--></form>>
+    <section id="Seleccion">
+                    <!-- Selección del día de entrada -->
+        <label for="entrada">Día de entrada:</label>
+        <input type="date" id="entrada" name="entrada" required>
+        <br><br>
+
+        <!-- Selección del día de salida -->
+        <label for="salida">Día de salida:</label>
+        <input type="date" id="salida" name="salida" required>
+        <br><br>
+
+        <label for ="adultos">Adultos:</label>
+        <input type="number" id="adultos" name="adultos" min="0" max="10" required>
+        <br>
+
+        <label for="ninos">Niños:    </label>
+        <input type="number" id="ninos" name="ninos" min="0" max="10" required>
+        <br>
+
+        <label for="habitaciones">Habitaciones:</label>
+        <input type="number" id="habitaciones" name="habitaciones" min="0" max="10" required>
+        <br><br>
+
+        <label for="cama doble">Cama doble:</label>
+        <input type="checkbox" id="cama doble" name="cama doble">  
+        <br><br>
+
+
+        <!-- Botón de envío -->
+        <button type="submit">Comprobar disponibilidad</button>
+
+        <h2>Informacion Personal para la reserva</h2>
+
+    </section>
+
+
+    <section id="Informacion">
+        
+            <input type="text" id="fname" name="fname" placeholder="Tu Nombre"><br ><br>
+        
+            <input type="text" id="lname" name="lname" placeholder="Tus apellidos" ><br><br>
+        
+            <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
+            
+            <input type="tel" id="phone" name="phone" placeholder="Telefono"><br><br>
+
+            <input type="date" id="birthdate" name="birthdate"><br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+
+            <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+    </section>
+
+</form> 
+    
+</body>
+</html>
