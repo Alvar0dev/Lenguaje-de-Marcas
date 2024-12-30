@@ -16,9 +16,12 @@
 <body>
     <h1>Reservas Hotel CRUD</h1>
 
-<form action="<!-- Enlace a la página de destino-->" method="post" <!-- El metodo post permite enviar la informacion sin que este implicita en la URL--></form>>
-    <section id="Seleccion">
-                    <!-- Selección del día de entrada -->
+<container>
+
+<form action="<!-- Enlace a la página de destino-->" method="post" <!-- El metodo post permite enviar la informacion sin que este implicita en la URL--></form>
+    <section id="Seleccion" style="text-align: center; margin-top: 50px;">
+                <!-- Selección del día de entrada -->
+        
         <label for="entrada">Día de entrada:</label>
         <input type="date" id="entrada" name="entrada" required>
         <br><br>
@@ -63,14 +66,23 @@
             
             <input type="tel" id="phone" name="phone" placeholder="Telefono"><br><br>
 
-            <input type="date" id="birthdate" name="birthdate"><br><br>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar"><br>
             <input type="reset" value="Limpiar">
-
-            <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
     </section>
 
+</container>
+
 </form> 
-    
+
+<div class="container">
+    <label for="checkbox">Acepto los terminos y condiciones:</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+</div>
+
+<aside class="banner">
+    <p>Una entrada al paraiso</p>
+    <img href="source/parmera.jpg" alt="banner">
+</aside>
+
 </body>
 </html>

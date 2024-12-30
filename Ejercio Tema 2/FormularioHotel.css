@@ -1,32 +1,78 @@
-form {
-  max-width: 500px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  max-width: 400px;
+  text-align: center;
   margin: 0 auto;
   padding: 20px;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
+  font-family: Arial, sans-serif;
 }
 
-/* Alinear etiquetas y entradas horizontalmente */
-.Seleccion {
+/* Alinear labels y campos verticalmente */
+section {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  margin-bottom: 15px;
+  flex-direction: column; /* Apila elementos verticalmente */
+  margin-bottom: 30px;
 }
 
-.Seleccion label {
-  flex: 0 0 150px; /* Ancho fijo para las etiquetas */
-  text-align: right; /* Alinear texto dentro de la etiqueta */
-  margin-right: 10px; /* Espaciado entre etiqueta y campo */
+/* Estilo para centrar los labels */
+section label {
+  text-align: center; /* Centrar el texto del label */
+  margin-bottom: 5px; /* Espaciado entre label y campo */
 }
 
-.Seleccion input {
-  flex: 1; /* El input ocupa el resto del espacio */
+/* Inputs centrados */
+section input {
+  margin: 0 auto; /* Centrar los inputs */
+  width: 70%; /* Ajustar el ancho del input */
+  padding: 5px;
 }
 
-/* Estilo opcional para el contenedor general */
-body {
+h2 {
+  text-align: center;
+}
+
+/* Estilo opcional para el formulario */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
   background-color: rgb(218, 227, 255);
   font-family: Arial, sans-serif;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.sidebar {
+  background-color: #e9e9e9;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
