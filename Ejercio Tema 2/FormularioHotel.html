@@ -9,7 +9,10 @@
 
     <style>
         body{
-            background-color: rgb(218, 227, 255);
+            background-image: url("source/Sof---Modelo-Helsinki13.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; /* Evita la repetición de la imagen */
+            background-position: center;
         }
     </style>
 </head>
@@ -21,14 +24,16 @@
 <form action="<!-- Enlace a la página de destino-->" method="post" <!-- El metodo post permite enviar la informacion sin que este implicita en la URL--></form>
     <section id="Seleccion" style="text-align: center; margin-top: 50px;">
                 <!-- Selección del día de entrada -->
+
+                <h2>Reservas de Habitaciones</h2>
         
         <label for="entrada">Día de entrada:</label>
         <input type="date" id="entrada" name="entrada" required>
         <br><br>
 
         <!-- Selección del día de salida -->
-        <label for="salida">Día de salida:</label>
-        <input type="date" id="salida" name="salida" required>
+        <label for="dias">Días de estancia</label>
+        <input type="number" id="salida" name="salida" required>
         <br><br>
 
         <label for ="adultos">Adultos:</label>
@@ -51,12 +56,14 @@
         <!-- Botón de envío -->
         <button type="submit">Comprobar disponibilidad</button>
 
-        <h2>Informacion Personal para la reserva</h2>
+        
 
     </section>
 
 
     <section id="Informacion">
+
+        <h2>Informacion Personal para la reserva</h2>
         
             <input type="text" id="fname" name="fname" placeholder="Tu Nombre"><br ><br>
         
@@ -68,21 +75,22 @@
 
             <input type="submit" value="Enviar"><br>
             <input type="reset" value="Limpiar">
+            <div class="checkbox">
+                <label for="checkbox">Acepto los terminos y condiciones:</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
     </section>
 
 </container>
 
 </form> 
 
-<div class="container">
-    <label for="checkbox">Acepto los terminos y condiciones:</label>
-    <input type="checkbox" id="checkbox" name="checkbox">
-</div>
 
-<aside class="banner">
+
+<aside class="sidebar">
     <p>Una entrada al paraiso</p>
-    <img href="source/parmera.jpg" alt="banner">
-</aside>
+    
+</aside>    
 
 </body>
 </html>
