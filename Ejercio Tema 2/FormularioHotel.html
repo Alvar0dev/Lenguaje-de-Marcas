@@ -48,8 +48,29 @@
         <input type="number" id="habitaciones" name="habitaciones" min="0" max="10" required>
         <br><br>
 
+        <section id = "camas">
+
         <label for="cama doble">Cama doble:</label>
-        <input type="checkbox" id="cama doble" name="cama doble">  
+        <input type="radio" id="cama doble" name="opcion" value="cama doble" required>  
+        <label for="cama simple">Cama simple:</label> 
+        <input type="radio" id="cama simple" name="opcion" value="cama simple"> 
+        <label for="cama matrimonial">Cama matrimonial:</label>
+        <input type="radio" id="cama matrimonial" name="opcion" value="cama matrimonial">   
+
+        </section>
+
+        <section id = "desayunos">
+            <label for="Desayuno">Desayuno</label>
+            <input type="checkbox" id="desayuno" name="desayuno">
+            <label for="Almuerzo">Almuerzo</label>
+            <input type="checkbox" id="almuerzo" name="almuerzo">
+            <label for="Cena">Cena</label>
+            <input type="checkbox" id="cena" name="cena">
+            <label for="cama supletoria">Cama Supletoria:</label>
+            <input type="checkbox" id="cama supletoria" name="cama supletoria">
+        </section>
+
+
         <br><br>
 
 
@@ -72,6 +93,8 @@
             <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
             
             <input type="tel" id="phone" name="phone" placeholder="Telefono"><br><br>
+
+            <input type="number" id="noches" name="noches" placeholder="Nº de noches"><br><br>
 
             <input type="submit" value="Enviar"><br>
             <input type="reset" value="Limpiar">
